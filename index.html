@@ -1,0 +1,67 @@
+<Weather App html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"  />
+        <link rel = "stylesheet" href="src/style.css">
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+      <title>Weather App</title>
+    </head>
+    <br>
+      <br>
+    <body>
+        <ul>
+            <li> Last updated: <span id="date"></span></li> 
+      <br>
+      <div class="container">
+      <h1>
+        <br>
+        <form class="search-form" id="search-form">
+          <input type="search" placeholder="Search for location" autocomplete="off" autofocus="on" id = "city-input" class = "button"/>
+          <input type="submit" value ="Search"/>
+             </div>
+          </div>
+          </div>
+          </form >
+      </h1>
+      <br>
+      <div class="row">
+        <div class="col">
+      <h2 id="city"></h2> <strong id= "temperature"> 95</strong> ℉
+        
+        <li id="description"></li>
+       
+        <br>
+            <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="partly cloudy" id="icon"/>
+          
+<br>
+     High 108℉
+         Low 84℉</br>
+  
+        </h2>
+        <br>
+      <h3> Humidity: <span id="humidity"></span>%
+         <br>
+Wind: <span id="wind"></span>mph
+</h3>
+<br>
+        </div>
+<br>
+<br>
+<p>
+  
+    <footer>This project was coded by Katherine and is open-sourced by <a href ="https://github.com/stackhousepeterson/Weather-Application.git/">GitHub</a> 
+  </footer>
+  <script src="src/app.js"></script>
+</p>
+</div>
+</ul>
+    </body>
+  </html>
+  
