@@ -40,7 +40,6 @@ function displayForecast() {
         <span class="weather-forecast-temperature-max">98℉</span>
         <span class="weather-forecast-temperature-min">69℉</span>
       </div>
-    </div>
   `;
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
