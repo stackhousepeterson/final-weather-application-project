@@ -22,6 +22,15 @@ form {
   margin: auto;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 14px;
+  color: #88a5bc;
+}
 li,
 .date {
   list-style: none;
