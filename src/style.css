@@ -30,7 +30,15 @@ form {
 .weather-forecast-date {
   font-size: 14px;
   color: #88a5bc;
+  opacity: 0.5;
 }
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
 li,
 .date {
   list-style: none;
