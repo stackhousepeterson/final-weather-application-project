@@ -45,7 +45,6 @@ function displayForecast() {
   </div>
   `;
   forecastElement.innerHTML = forecastHTML;
-  forecastHTML`</div>`;
 }
 
 function displayTemperature(response) {
