@@ -44,6 +44,24 @@ function displayForecast() {
   `;
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2">
+      <div class="weather-forecast-date">Sunday</div>
+      <img
+        src="http://openweathermap.org/img/wn/02d@2x.png"
+        alt=""
+        width="42"
+      />
+      <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-max">98℉</span>
+        <span class="weather-forecast-temperature-min">69℉</span>
+      </div>
+    </div>
+  `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
