@@ -69,7 +69,6 @@ function handleSubmit(event) {
 }
 
 search("New York");
-
 displayForecast();
 
 let form = document.querySelector("#search-form");
