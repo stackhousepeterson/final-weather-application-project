@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  color: #88a5bc;
+  font-family: "Righteous", cursive;
+  font-size: xx-large;
+  text-align: center;
+  position: relative;
+  border-top-right-radius: 0%;
+}
+
+input {
+  text-align: center;
+  position: relative;
+}
+
+form {
+  font-size: large;
+  display: flex;
+  position: relative;
+  width: 50px 100px;
+  padding: 0 auto;
+  margin: auto;
+}
+
+li,
+.date {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+button {
+  color: #f0b396;
+  background-color: rgb(21, 186, 196);
+  border: none;
+}
+
+h1 {
+  position: relative;
+  width: 0;
+  margin: 0;
+  left: 50px;
+  padding: 0 auto;
+  text-align: center;
+}
+
+h2,
+h3 {
+  width: 50px 100px;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  color: #88a5bc;
+  padding: 0 auto;
+}
+h2 {
+  font-size: xx-large;
+  position: relative;
+}
+
+img {
+  position: relative;
+}
+.card-body {
+  border: 5px solid #f0b396;
+  background: #fad291;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  color: #88a5bc;
+  font-size: x-large;
+}
