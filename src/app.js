@@ -26,10 +26,10 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = `
-
-<div class="weather-forecast" id="forecast">
-  <div class="row">
+  let forecastHTML = "";
+  forecastHTML =
+    forecastHTML +
+    `<div class="row">
     <div class="col-2">
       <div clas="weather-forecast-date">Monday</div>
       <img
