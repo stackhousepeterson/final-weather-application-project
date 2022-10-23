@@ -77,8 +77,8 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = `7b0780809e5c473181bf677b7b7a1c69`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = `3c274atab4f09c0de0091b3boc3d9fc0`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query={query}&key={key}`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
