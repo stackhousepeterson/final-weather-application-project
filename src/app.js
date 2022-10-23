@@ -42,8 +42,7 @@ function displayForecast() {
         <span class="weather-forecast-temperature-min">45°</span>
       </div>
     </div>
-  </div>
-</div>`;
+  </div>`;
 }
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
