@@ -26,8 +26,8 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = "forecast";
-}
+  forecastElement.innerHTML = `
+
 <div class="weather-forecast" id="forecast">
   <div class="row">
     <div class="col-2">
@@ -43,8 +43,8 @@ function displayForecast() {
       </div>
     </div>
   </div>
-</div>;
-
+</div>`;
+}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
