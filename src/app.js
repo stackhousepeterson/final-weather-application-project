@@ -26,13 +26,13 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = `3c274atab4f09c0de0091b3boc3d9fc0`;
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
 
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
@@ -51,28 +51,8 @@ function displayTemperature(response) {
 
   console.log({ response: response.data });
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
 
   getForecast(response.data.coordinates);
 }
-
-function search(city) {
-  let apiKey = `3c274atab4f09c0de0091b3boc3d9fc0`;
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
-}
-
-function handleSubmit(event) {
-  event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
-  search(cityInputElement.value);
-}
-
-search("New York");
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
