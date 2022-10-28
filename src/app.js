@@ -19,14 +19,12 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `<div class="col-2">
-      <div clas="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+      <div class = "weather-forecast-date">${formatDay(forecastDay.dt)}</div>
       <img
         src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
