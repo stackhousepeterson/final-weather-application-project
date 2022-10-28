@@ -19,8 +19,8 @@ function displayForecast(response) {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<div class="col-2">
-      <div clas="weather-forecast-date">${day}</div>
+      `<div class="col-4">
+      <div clas="weather-forecast-date">${dates}</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
         alt=""
@@ -63,8 +63,7 @@ function displayTemperature(response) {
 
   console.log({ response: response.data });
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute("src", response.data.condition.`http://openweathermap.org/img/wn/02d@2x.png`
-  iconElement.setAttribute("alt", response.data.condition.description);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coordinates);
 }
