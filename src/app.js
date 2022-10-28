@@ -78,7 +78,6 @@ function displayTemperature(response) {
 
   getForecast(response.data.coordinates);
 }
-
 function search(city) {
   let apiKey = `3c274atab4f09c0de0091b3boc3d9fc0`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
