@@ -9,7 +9,15 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
 
-  let days = ["Monday", "Tuesday", "Wednesday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
@@ -17,7 +25,14 @@ function formatDate(timestamp) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+  let days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
