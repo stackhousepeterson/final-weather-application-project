@@ -9,15 +9,7 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
 
-  let days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  let days = ["Monday", "Tuesday", "Wednesday"];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
@@ -27,19 +19,11 @@ function displayForecast() {
 
   let forecastHTML = `<div class="row">`;
 
-  let days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  let days = ["Monday", "Tuesday", "Wednesday"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<div class="col-3">
+      `<div class="col-2">
       <div clas="weather-forecast-date">${day}</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -50,12 +34,11 @@ function displayForecast() {
         <span class="weather-forecast-temperature-max"> 67°F </span>
         <span class="weather-forecast-temperature-min"> 45°F </span>
       </div>
-    </div>
-  </div>`;
+    </div>`;
 
     forecastHTML =
       forecastHTML +
-      `<div class="col-3">
+      `<div class="col-2">
       <div clas="weather-forecast-date">${day}</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -66,12 +49,11 @@ function displayForecast() {
         <span class="weather-forecast-temperature-max"> 67°F </span>
         <span class="weather-forecast-temperature-min"> 45°F </span>
       </div>
-    </div>
-  </div>`;
+    </div>`;
 
     forecastHTML =
       forecastHTML +
-      `<div class="col-3">
+      `<div class="col-2">
       <div clas="weather-forecast-date">${day}</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
