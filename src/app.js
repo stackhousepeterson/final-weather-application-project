@@ -36,10 +36,10 @@ function displayForecast() {
     "Saturday",
     "Sunday",
   ];
-
-  forecastHTML =
-    forecastHTML +
-    `<div class="col-3">
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-3">
       <div clas="weather-forecast-date">Friday</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -53,9 +53,9 @@ function displayForecast() {
     </div>
   </div>`;
 
-  forecastHTML =
-    forecastHTML +
-    `<div class="col-3">
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-3">
       <div clas="weather-forecast-date">Friday</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -69,9 +69,9 @@ function displayForecast() {
     </div>
   </div>`;
 
-  forecastHTML =
-    forecastHTML +
-    `<div class="col-3">
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-3">
       <div clas="weather-forecast-date">Friday</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -84,8 +84,9 @@ function displayForecast() {
       </div>
     </div>`;
 
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
 }
 
 function displayForecast(response) {
