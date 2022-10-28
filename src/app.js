@@ -12,11 +12,10 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = "";
+  let forecastHTML = `<div class="row">`;
   forecastHTML =
     forecastHTML +
-    `<div class="row">
-    <div class="col-2">
+    `<div class="col-3">
       <div clas="weather-forecast-date">Friday</div>
       <img
         src="http://openweathermap.org/img/wn/02d@2x.png"
@@ -24,12 +23,45 @@ function displayForecast() {
         width="42"
       />
       <div class="weather-forecast-temperature">
-        <span class="weather-forecast-temperature-max"> 67° </span>
-        <span class="weather-forecast-temperature-min"> 45° </span>
+        <span class="weather-forecast-temperature-max"> 67°F </span>
+        <span class="weather-forecast-temperature-min"> 45°F </span>
       </div>
     </div>
   </div>`;
   forecastElement.innerHTML = forecastElement.HTML;
+
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-3">
+      <div clas="weather-forecast-date">Friday</div>
+      <img
+        src="http://openweathermap.org/img/wn/02d@2x.png"
+        alt=""
+        width="42"
+      />
+      <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-max"> 67°F </span>
+        <span class="weather-forecast-temperature-min"> 45°F </span>
+      </div>
+    </div>
+  </div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-3">
+      <div clas="weather-forecast-date">Friday</div>
+      <img
+        src="http://openweathermap.org/img/wn/02d@2x.png"
+        alt=""
+        width="42"
+      />
+      <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-max"> 67°F </span>
+        <span class="weather-forecast-temperature-min"> 45°F </span>
+      </div>
+    </div>`;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayForecast(response) {
