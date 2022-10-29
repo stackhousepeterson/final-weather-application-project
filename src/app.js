@@ -16,6 +16,8 @@ function formatDate(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
 
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
