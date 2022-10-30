@@ -25,16 +25,21 @@ form {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  padding: 0%;
 }
 
 .weather-forecast-date {
   font-size: 14px;
   color: #88a5bc;
   opacity: 0.5;
+  padding: 0%;
 }
+.weather-forecast-temperature-max {
+  font-size: large;
+}
+
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  font-size: large;
 }
 .weather-forecast-temperature {
   font-size: 13px;
