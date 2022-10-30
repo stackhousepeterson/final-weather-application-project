@@ -31,15 +31,15 @@ form {
   font-size: 14px;
   color: #88a5bc;
   opacity: 0.5;
-  padding: 0%;
+  margin: auto;
 }
 .weather-forecast-temperature-max {
-  font-size: 14px;
+  font-size: larger;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
-  font-size: 14px;
+  font-size: larger;
 }
 .weather-forecast-temperature {
   font-size: 13px;
