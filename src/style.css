@@ -25,6 +25,7 @@ form {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  padding: 0%;
 }
 
 .weather-forecast-date {
