@@ -25,6 +25,9 @@ form {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  margin: 0;
+  padding: 0%;
+  display: inline-block;
 }
 
 .weather-forecast-date {
@@ -42,7 +45,8 @@ form {
   font-size: larger;
 }
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: large;
+  margin: auto;
 }
 
 li,
